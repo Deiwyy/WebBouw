@@ -1,0 +1,73 @@
+
+
+section#home-hero {
+    #hero-title {
+        font-size: 4rem;
+        font-weight: 700;
+        max-width: 700px;
+    }
+
+    #hero-text {
+        font-size: 1.2rem;;
+        max-width: 750px;
+    }
+
+
+    .hero-technology-card-col {
+
+        padding-bottom: 1.75rem;
+
+        aspect-ratio: 1/1;
+
+        
+
+        .hero-technology-card-wrapper {
+            padding: 1rem;
+            padding-top: 0.5rem;
+            border-radius: 1rem;
+            border: 1px solid $gray-300;
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    
+}
+
+section#mission {
+    position: relative;
+    background-position: center cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .blur-overlay {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('/static/images/section-mission-background.png');
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px);
+        opacity: 1;
+        transform: scaleY(1);
+        z-index: 1;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba($primary, 0.75); /* Example: Bootstrap primary with alpha */
+            z-index: 2;
+        }
+    }
+
+    .mission-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-align: center;
+      }
+}

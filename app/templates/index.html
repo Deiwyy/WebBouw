@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block title_suffix %} - Home{% endblock title_suffix %}
+
+{% block content %}
+
+<section id="home-hero">
+    <div class="container-fluid custom-container w-100 h-100">
+        <div class="row w-100 h-100">
+            <div class="col-12 h-100 d-flex justify-content-center align-items-center flex-column text-center gap-4">
+                <h1 id="hero-title">Je droom-website voor een <span class="text-decoration-underline text-primary">eerlijke prijs</span></h1>
+                <p id="hero-text">Professionele website design en ontwikkeling voor beginnende bedrijfen. Ontdek onze oplossingen en vraag een offerte aan!</p>
+                <div class="d-flex gap-5 flex-column flex-md-row justify-content-center align-items-center">
+                    <a href="" class="btn btn-primary p-2 fw-semibold">Offerte aanvragen</a>
+                    <a href="" class="text-decoration-none text-black">Ontdek meer <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section-darker">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-header-default">Diensten</h1>
+            </div>
+            <div class="col-12">
+                <div class="row flex-grow-1">
+                    <div class="col-12 same-height-col col-md-4 dienst-column">
+                        <div class="card dienst-card d-flex h-100">
+                            <div class="card-header fw-semibold">
+                                Website Design en Ontwerping
+                            </div>
+                            <div class="card-body flex-grow-1">
+                                <img src="{{ url_for("static", filename="images/dienst-website-design.png") }}" class="img-fluid rounded border mb-3" alt="...">
+                                Ik kan je helpen met het ontwerpen van een website die niet alleen mooi is, maar ook gebruiksvriendelijk en functioneel. Ik zorg ervoor dat je website er professioneel uitziet en goed presteert.
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 same-height-col col-md-4 dienst-column">
+                        <div class="card dienst-card d-flex h-100">
+                            <div class="card-header fw-semibold">
+                                Hosting
+                            </div>
+                            <div class="card-body flex-grow-1">
+                                <img src="{{ url_for("static", filename="images/dienst-website-hosting.png") }}" class="img-fluid rounded border mb-3" alt="...">
+                                Ik kan je helpen met je website hosting. Ik bied betrouwbare en snelle hostingdiensten aan, zodat je website altijd online is en goed presteert.
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 same-height-col col-md-4 dienst-column">
+                        <div class="card dienst-card d-flex h-100">
+                            <div class="card-header fw-semibold">
+                                Website Onderhoud
+                            </div>
+                            <div class="card-body flex-grow-1">
+                                <img src="{{ url_for("static", filename="images/dienst-website-onderhoud.png") }}" class="img-fluid rounded border mb-3" alt="...">
+                                Ik kan je helpen met het onderhouden van je website. Dit omvat regelmatige updates, back-ups en beveiliging om ervoor te zorgen dat je website altijd veilig en up-to-date is.
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="" class="btn btn-primary">Meer info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="home-testimonials">
+    <div class="container-fluid custom-container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-header-default">Testimonials</h1>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="testimonial-col col-12 col-lg-3">
+                        <div class="testimonial card">
+                            <div class="card-body">
+                                <p class="testimonial-text">
+                                    "Mijn missie is om betaalbare, professionele websites te leveren die niet alleen mooi zijn, maar ook functioneel en gebruiksvriendelijk. Ik geloof dat elke ondernemer, groot of klein, recht heeft op een online aanwezigheid die hun visie weerspiegelt en hun doelen ondersteunt."
+                                </p>
+                                <p class="testimonial-author text-end">- Eigen missie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-col col-12 col-lg-3">
+                        Hier komen jullie testimonials te staan...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mission" style="background-image: url({{ url_for("static", filename="images/section-mission-background.png") }})">
+    <div class="blur-overlay"></div>
+    <div class="container-fluid custom-container mission-content">
+        <div class="row">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center center gap-3">
+                <h1 class="fw-semibold">Missie</h1>
+                <p style="max-width: 1000px;">Mijn missie is om betaalbare, professionele websites te leveren die niet alleen mooi zijn, maar ook functioneel en gebruiksvriendelijk. Ik geloof dat elke ondernemer, groot of klein, recht heeft op een online aanwezigheid die hun visie weerspiegelt en hun doelen ondersteunt.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact-form" class="section-darker">
+    <div class="container-fluid custom-container mission-content">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-header-default">Neem contact met ons mij</h1>
+            </div>
+            <div class="col-12 col-lg-6 same-height-col">
+                <h3>Contactformulier</h3>
+                <p>Wil je een offerte aanvragen, heb je vragen of wil je meer weten over mijn diensten? Vul het onderstaande formulier in en we nemen zo snel mogelijk contact met je op!</p>
+                <form action="" method="POST" class="d-flex flex-column gap-3">
+                    <input type="text" name="name" class="form-control" placeholder="Naam" required>
+                    <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                    <textarea name="message" class="form-control" rows="5" placeholder="Bericht" required></textarea>
+                    <button type="submit" class="btn btn-primary">Verstuur</button>
+                </form>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-content-center text-center col-12 col-lg-6 same-height-col">
+                <h3>Meer directe contactmethoden</h3>
+                <p>Wilt u liever meer direct in contact komen? Dat kan ook!</p>
+                <div class="mt-2">
+                    <a href="" class="text-primary"><i class="fa-fw fab fa-whatsapp fa-3x"></i></a>
+                    <a href="" class="text-primary"><i class="fa-fw fab fa-instagram fa-3x"></i></a>
+                    <a href="" class="text-primary"><i class="fa-fw fa fa-phone fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

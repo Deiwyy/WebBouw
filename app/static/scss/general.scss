@@ -1,0 +1,35 @@
+
+
+.custom-container {
+    @include make-container(100px);
+}
+
+section {
+    background-color: $section-bg !important;
+
+    padding: $section-padding 0 !important;
+    // margin: $section-margin 0 !important;
+
+    &.section-darker {
+        background-color: $section-bg-darker !important;
+    }
+
+
+    .section-header-default {
+        margin-bottom: 30px !important;
+        &::after {
+            content: "" !important;
+            display: block !important;
+            width: 100px !important;
+            height: 4px !important;
+            background-color: $primary !important;
+            margin-top: 10px !important;
+        }
+    }
+}
+
+.row {
+    .same-height-col {
+        height: 100%;
+    }
+}
