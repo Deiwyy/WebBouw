@@ -9,5 +9,5 @@ $(window).resize(function(){
 
 function resizeHeroSection() {
     const headerHeight = $("header").outerHeight();
-    $("section#home-hero").css("height", $(window).height() - headerHeight);
+    $("section#home-hero").css("min-height", $(window).height() - headerHeight);
 }
